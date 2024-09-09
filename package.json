@@ -1,0 +1,23 @@
+{
+  "name": "ranyeh24.github.io",
+  "version": "1.0.0",
+  "description": "Hello, I'm Randy Hasibuan. I'm web developer that love HTML, CSS, JavaScript, and PHP web development.",
+  "main": "index.html",
+  "scripts": {
+    "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
+    "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
+  },
+  "keywords": [
+    "personal-portfolio",
+    "portfolio",
+    "resume",
+    "cv"
+  ],
+  "author": "Randy Hasibuan",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10"
+  }
+}
