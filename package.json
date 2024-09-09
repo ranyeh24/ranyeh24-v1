@@ -4,8 +4,8 @@
   "description": "Hello, I'm Randy Hasibuan. I'm web developer that love HTML, CSS, JavaScript, and PHP web development.",
   "main": "index.html",
   "scripts": {
-    "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
-    "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
+    "tw-build": "npx tailwindcss -i ./src/tailwind-input.css -o ./dist/css/tailwind.css --watch",
+    "tw-minify": "npx tailwindcss -o ./dist/css/tailwind.min.css --minify"
   },
   "keywords": [
     "personal-portfolio",
