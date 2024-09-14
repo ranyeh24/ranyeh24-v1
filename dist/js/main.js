@@ -57,7 +57,7 @@
     } else if (theme == "dark") {
       themeSwitcher.innerHTML = '<i class="uil uil-moon"></i>';
     } else {
-      theme = "dark";
+      theme = "light";
       localStorage.setItem("RHSystem_ThemeMode", theme);
       themeSwitcher.innerHTML = '<i class="uil uil-moon"></i>';
     }
