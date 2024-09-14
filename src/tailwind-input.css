@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply tw-scroll-smooth tw-font-sans;
+    color-scheme: light;
+  }
+
+  [data-theme-mode="dark"] {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply tw-relative tw-overflow-x-hidden tw-bg-body-light-1 tw-text-base tw-font-normal tw-text-body-light-11 dark:tw-bg-body-dark-1 dark:tw-text-body-dark-11;
+  }
+
+  [tabindex] {
+    @apply tw-outline-none;
+  }
+
+  img {
+    @apply tw-w-auto tw-max-w-full;
+  }
+
+  a {
+    @apply tw-text-balance tw-break-words tw-text-primary-light-11 tw-no-underline hover:tw-text-primary-light-10 dark:tw-text-primary-dark-11 dark:hover:tw-text-primary-dark-10;
+  }
+
+  a,
+  button {
+    @apply tw-cursor-pointer;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    @apply tw-border-0 tw-bg-inherit tw-text-inherit tw-outline-none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  ul,
+  ol {
+    @apply tw-list-none;
+  }
+
+  strong {
+    @apply tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tw-m-0 tw-text-pretty tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
+  }
+
+  h1 {
+    @apply tw-text-5xl/tight;
+  }
+  h2 {
+    @apply tw-text-4xl/tight;
+  }
+  h3 {
+    @apply tw-text-3xl/tight;
+  }
+  h4 {
+    @apply tw-text-2xl/tight;
+  }
+  h5 {
+    @apply tw-text-xl/tight;
+  }
+  h6 {
+    @apply tw-text-sm/tight;
+  }
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    @apply tw-mt-6;
+  }
+
+  p {
+    @apply tw-m-0 tw-text-[1em]/normal;
+  }
+  p + p {
+    @apply tw-mt-5;
+  }
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6 {
+    @apply tw-mt-8;
+  }
+}
+
+@layer components {
+  .rh-button {
+    @apply tw-inline-block tw-text-nowrap tw-rounded-full tw-border tw-border-solid tw-border-transparent tw-bg-inherit tw-px-8 tw-py-3.5 tw-text-center tw-font-medium tw-leading-normal tw-text-inherit tw-transition-colors tw-duration-300 hover:tw-bg-inherit hover:tw-text-inherit focus:tw-bg-inherit focus:tw-text-inherit;
+  }
+
+  .rh-section-area {
+    @apply tw-relative tw-overflow-hidden tw-bg-body-light-1 tw-py-14 md:tw-py-24 dark:tw-bg-body-dark-1;
+  }
+  .rh-section-area:nth-child(even) {
+    @apply tw-bg-body-light-2 dark:tw-bg-body-dark-2;
+  }
+}
+
+@layer utilities {
+  .rh-disabled,
+  :disabled {
+    @apply !tw-pointer-events-none !tw-select-none !tw-opacity-65;
+  }
+
+  .rh-bg-body {
+    @apply tw-bg-body-light-1 dark:tw-bg-body-dark-1;
+  }
+  .rh-bg-body-secondary {
+    @apply tw-bg-body-light-2 dark:tw-bg-body-dark-2;
+  }
+
+  .rh-text-body {
+    @apply tw-text-body-light-11 dark:tw-text-body-dark-11;
+  }
+  .rh-text-emphasis {
+    @apply tw-text-body-light-12 dark:tw-text-body-dark-12;
+  }
+}
+
+.lds-ripple,
+.lds-ripple div {
+  @apply tw-box-border;
+}
+.lds-ripple {
+  @apply tw-relative tw-inline-block tw-h-[80px] tw-w-[80px] tw-text-primary;
+}
+.lds-ripple div {
+  @apply tw-absolute tw-rounded-full tw-border-4 tw-border-solid tw-border-current tw-opacity-100;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    @apply tw-left-9 tw-top-9 tw-h-2 tw-w-2 tw-opacity-0;
+  }
+  4.9% {
+    @apply tw-left-9 tw-top-9 tw-h-2 tw-w-2 tw-opacity-0;
+  }
+  5% {
+    @apply tw-left-9 tw-top-9 tw-h-2 tw-w-2 tw-opacity-100;
+  }
+  100% {
+    @apply tw-left-0 tw-top-0 tw-h-[80px] tw-w-[80px] tw-opacity-0;
+  }
+}
+
+.rh-navbar.isSticky {
+  @apply tw-border-body-light-a3 tw-bg-body-light-1 tw-bg-opacity-75 tw-backdrop-blur dark:tw-border-body-dark-a3 dark:tw-bg-body-dark-1 dark:tw-bg-opacity-75;
+}
+.rh-navbar.menuShow {
+  @apply tw-bg-opacity-100 tw-backdrop-blur-0 dark:tw-bg-opacity-100;
+}
+.rh-navbar.menuShow .rh-navbar-collapse {
+  @apply tw-visible tw-translate-y-0 tw-opacity-100;
+}
+.rh-navbar-link.isActive {
+  @apply tw-text-primary;
+}
+
+[data-web-trigger="scroll-top"].isShow {
+  @apply tw-visible tw-opacity-100;
+}
