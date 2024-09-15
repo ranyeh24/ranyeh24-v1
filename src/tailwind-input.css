@@ -191,3 +191,7 @@
 #spotlight {
   font-family: inherit;
 }
+
+pre[class*="language-"] {
+  @apply tw-rounded-lg tw-px-5 tw-py-0;
+}
