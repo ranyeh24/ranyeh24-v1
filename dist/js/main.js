@@ -76,12 +76,6 @@
     html.dataset.themeMode = theme;
   });
 
-  // Init glightbox
-  const imageGallery = GLightbox({
-    selector: ".rh-image-gallery",
-    type: "image",
-  });
-
   // Show or hide scroll to top button
   const stButton = document.querySelector("[data-web-trigger=scroll-top]");
 
