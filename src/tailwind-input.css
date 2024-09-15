@@ -187,3 +187,7 @@
 [data-web-trigger="scroll-top"].isShow {
   @apply tw-visible tw-opacity-100;
 }
+
+#spotlight {
+  font-family: inherit;
+}
