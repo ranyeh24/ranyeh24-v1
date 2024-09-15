@@ -1160,10 +1160,6 @@ p + h1,
   border-color: #00104010;
 }
 
-.tw-border-body-light-a6{
-  border-color: #00073527;
-}
-
 .tw-border-transparent{
   border-color: transparent;
 }
@@ -1322,11 +1318,6 @@ p + h1,
   text-align: center;
 }
 
-.tw-text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .tw-text-2xl\/none{
   font-size: 1.5rem;
   line-height: 1;
@@ -1369,6 +1360,11 @@ p + h1,
 .tw-text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.tw-text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .tw-text-sm{
@@ -1885,9 +1881,9 @@ p + h1,
     line-height: 2rem;
   }
 
-  .sm\:tw-text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .sm\:tw-text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2009,10 +2005,6 @@ p + h1,
 
 .dark\:tw-border-body-dark-a3:where([data-theme-mode=dark], [data-theme-mode=dark] *){
   border-color: #ccd9fd15;
-}
-
-.dark\:tw-border-body-dark-a6:where([data-theme-mode=dark], [data-theme-mode=dark] *){
-  border-color: #d6dbfc2f;
 }
 
 .dark\:tw-bg-body-dark-1:where([data-theme-mode=dark], [data-theme-mode=dark] *){
