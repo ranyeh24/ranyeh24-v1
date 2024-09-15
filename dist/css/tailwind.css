@@ -1644,6 +1644,10 @@ p + h1,
   opacity: 1;
 }
 
+#spotlight {
+  font-family: inherit;
+}
+
 .before\:tw-absolute::before{
   content: var(--tw-content);
   position: absolute;
