@@ -1,7 +1,7 @@
 {
   "name": "ranyeh24.github.io",
   "version": "1.0.0",
-  "description": "Hello, I'm Randy Hasibuan. I'm web developer that love HTML, CSS, JavaScript, and PHP web development.",
+  "description": "Hello, I'm Randy Y. Hasibuan. I'm a Web Developer from Indonesia passionate about making websites.",
   "main": "index.html",
   "scripts": {
     "tw-build": "npx tailwindcss -i ./src/tailwind-input.css -o ./dist/css/tailwind.css --watch",
