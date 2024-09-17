@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +10,7 @@
 
 @layer base {
   html {
-    @apply tw-scroll-smooth tw-font-sans;
+    @apply tw-font-body tw-scroll-smooth;
     color-scheme: light;
   }
 
@@ -62,7 +64,7 @@
   h4,
   h5,
   h6 {
-    @apply tw-m-0 tw-text-pretty tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
+    @apply tw-font-heading tw-m-0 tw-text-pretty tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
   }
 
   h1 {
