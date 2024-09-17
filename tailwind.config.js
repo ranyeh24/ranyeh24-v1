@@ -10,7 +10,17 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: [
+        heading: [
+          "Nunito",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
+        body: [
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -19,6 +29,17 @@ module.exports = {
           "Segoe UI Emoji",
           "Segoe UI Symbol",
           "Noto Color Emoji",
+        ],
+        code: [
+          "Fira Code",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
         ],
       },
       colors: {
