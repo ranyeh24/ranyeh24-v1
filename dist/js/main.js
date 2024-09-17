@@ -101,4 +101,21 @@
 
   // Init AOS
   AOS.init();
+
+  // Tech stacks
+  const techStacks = document.querySelectorAll(".tech-stacks");
+
+  techStacks.forEach((carousel) => {
+    window.addEventListener("load", function () {
+      const wrapper = carousel.querySelector(".tech-stacks-wrapper"),
+        clone = wrapper.cloneNode(true);
+
+      carousel.appendChild(clone);
+
+      setTimeout(() => {
+        wrapper.classList.add("animated");
+        clone.classList.add("animated");
+      }, 50);
+    });
+  });
 })();
