@@ -10,7 +10,7 @@
 
 @layer base {
   html {
-    @apply tw-font-body tw-scroll-smooth;
+    @apply tw-scroll-smooth tw-font-body;
     color-scheme: light;
   }
 
@@ -64,7 +64,7 @@
   h4,
   h5,
   h6 {
-    @apply tw-font-heading tw-m-0 tw-text-pretty tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
+    @apply tw-m-0 tw-text-pretty tw-font-heading tw-font-bold tw-text-body-light-12 dark:tw-text-body-dark-12;
   }
 
   h1 {
@@ -196,4 +196,30 @@
 
 pre[class*="language-"] {
   @apply tw-rounded-lg tw-px-5 tw-py-0;
+}
+
+.tech-stacks > .tech-stacks-wrapper.animated {
+  animation: tech-stacks 20s linear infinite;
+}
+
+@keyframes tech-stacks {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-stacks.invert-direction > .tech-stacks-wrapper.animated {
+  animation: tech-stacks-invert 20s linear infinite;
+}
+
+@keyframes tech-stacks-invert {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
