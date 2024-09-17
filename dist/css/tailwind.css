@@ -1232,6 +1232,11 @@ p + h1,
   border-style: solid;
 }
 
+.tw-border-body-light-6{
+  --tw-border-opacity: 1;
+  border-color: rgb(216 217 224 / var(--tw-border-opacity));
+}
+
 .tw-border-body-light-8{
   --tw-border-opacity: 1;
   border-color: rgb(185 187 198 / var(--tw-border-opacity));
@@ -1277,6 +1282,11 @@ p + h1,
 .tw-bg-body-light-1{
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 253 / var(--tw-bg-opacity));
+}
+
+.tw-bg-body-light-2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 251 / var(--tw-bg-opacity));
 }
 
 .tw-bg-body-light-a6{
@@ -1332,6 +1342,10 @@ p + h1,
   background-repeat: no-repeat;
 }
 
+.tw-fill-black{
+  fill: #000;
+}
+
 .tw-fill-body-light-12{
   fill: #1e1f24;
 }
@@ -1371,6 +1385,11 @@ p + h1,
   padding-right: 0.25rem;
 }
 
+.tw-px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .tw-px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1394,6 +1413,11 @@ p + h1,
 .tw-py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.tw-py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .tw-py-5{
@@ -1776,6 +1800,34 @@ pre[class*="language-"]{
   padding-bottom: 0px;
 }
 
+.tech-stacks > .tech-stacks-wrapper.animated {
+  animation: tech-stacks 20s linear infinite;
+}
+
+@keyframes tech-stacks {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-stacks.invert-direction > .tech-stacks-wrapper.animated {
+  animation: tech-stacks-invert 20s linear infinite;
+}
+
+@keyframes tech-stacks-invert {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .before\:tw-absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -2062,6 +2114,10 @@ pre[class*="language-"]{
     gap: 3rem;
   }
 
+  .md\:tw-gap-16{
+    gap: 4rem;
+  }
+
   .md\:tw-gap-y-12{
     row-gap: 3rem;
   }
@@ -2174,6 +2230,11 @@ pre[class*="language-"]{
   }
 }
 
+.dark\:tw-border-body-dark-6:where([data-theme-mode=dark], [data-theme-mode=dark] *){
+  --tw-border-opacity: 1;
+  border-color: rgb(67 68 74 / var(--tw-border-opacity));
+}
+
 .dark\:tw-border-body-dark-8:where([data-theme-mode=dark], [data-theme-mode=dark] *){
   --tw-border-opacity: 1;
   border-color: rgb(102 104 114 / var(--tw-border-opacity));
@@ -2209,6 +2270,10 @@ pre[class*="language-"]{
 
 .dark\:tw-fill-body-dark-12:where([data-theme-mode=dark], [data-theme-mode=dark] *){
   fill: #eeeef0;
+}
+
+.dark\:tw-fill-white:where([data-theme-mode=dark], [data-theme-mode=dark] *){
+  fill: #fff;
 }
 
 .dark\:tw-text-black:where([data-theme-mode=dark], [data-theme-mode=dark] *){
