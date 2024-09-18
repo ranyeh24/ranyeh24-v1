@@ -223,3 +223,7 @@ pre[class*="language-"] {
     transform: translateX(100%);
   }
 }
+
+.rh-pagination .rh-pagination-link.isActive {
+  @apply tw-bg-primary tw-text-white;
+}
