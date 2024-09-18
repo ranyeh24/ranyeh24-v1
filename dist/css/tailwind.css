@@ -1454,6 +1454,10 @@ p + h1,
   text-align: center;
 }
 
+.tw-font-body{
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
 .tw-text-2xl\/none{
   font-size: 1.5rem;
   line-height: 1;
