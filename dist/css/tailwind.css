@@ -1200,6 +1200,10 @@ p + h1,
   gap: 2rem;
 }
 
+.tw-gap-2{
+  gap: 0.5rem;
+}
+
 .tw-overflow-hidden{
   overflow: hidden;
 }
@@ -1832,6 +1836,13 @@ pre[class*="language-"]{
   }
 }
 
+.rh-pagination .rh-pagination-link.isActive{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 0 79 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .before\:tw-absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -1985,6 +1996,11 @@ pre[class*="language-"]{
 .focus\:tw-bg-body-light-8:focus{
   --tw-bg-opacity: 1;
   background-color: rgb(185 187 198 / var(--tw-bg-opacity));
+}
+
+.focus\:tw-bg-primary:focus{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 0 79 / var(--tw-bg-opacity));
 }
 
 .focus\:tw-bg-primary-light-10:focus{
