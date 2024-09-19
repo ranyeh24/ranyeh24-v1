@@ -177,6 +177,7 @@ module.exports = {
         "gradient-90": "linear-gradient(90deg, #f70079 0%, #f70024 100%)",
         "gradient-180": "linear-gradient(180deg, #f70079 0%, #f70024 100%)",
         cta: "linear-gradient(315deg, rgba(247, 0, 121, 0.75) 0%, rgba(247, 0, 36, 0.75) 100%), url(../../assets/img/call-to-action.jpg)",
+        "form-check-input": "var(--rh-form-check-bg-image)",
       },
     },
   },
